@@ -12,3 +12,6 @@ paymentSubject.subscribe(shipment);
 
 const payment = new Payment(paymentSubject);
 payment.creditCard({ id: 1, description: "First payment" });
+
+paymentSubject.unsubscribe(marketing);
+payment.creditCard({ id: 2, description: "Second payment" });
